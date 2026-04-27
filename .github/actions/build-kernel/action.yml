@@ -1,4 +1,9 @@
 name: 'Build OnePlus Kernel with KernelSU Next'
+    - name: Configure Git Identity
+      shell: bash
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
 
 inputs:
   op_config_json:
